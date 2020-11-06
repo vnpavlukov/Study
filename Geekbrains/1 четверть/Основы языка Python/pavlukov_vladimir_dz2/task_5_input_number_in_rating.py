@@ -8,16 +8,20 @@
 Набор натуральных чисел можно задать непосредственно в коде, например, my_list = [7, 5, 3, 3, 2]."""
 
 old_rating = [7, 5, 3, 3, 2]
-
 input_number = 1
 
 
 def add_number(rating, number):
-    for i in range(len(rating)):
-        if number > rating[i]:
-            rating.insert(i, number)
-            return rating
-    rating.append(number)
+    if number > rating[0]:
+        rating.insert(0, number)
+    elif number < rating[-1]:
+        rating.append(number)
+    else:
+        for index in range(len(rating)):
+            if number > rating[index]:
+                rating.insert(index, number)
+                return rating
+        rating.append(number)
     return rating
 
 

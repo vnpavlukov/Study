@@ -27,7 +27,7 @@ def season_in_dict(num):
         6: 'лето', 7: 'лето', 8: 'лето',
         9: 'осень', 10: 'осень', 11: 'осень',
     }
-    return dict_of_month[num]
+    return dict_of_month.get(num, 'there is no such month')
 
 
 print(season_in_list(num_input))

@@ -2,13 +2,13 @@
 Строки необходимо пронумеровать. Если в слово длинное, выводить только первые 10 букв в слове."""
 
 # words = input()
-words = 'hello world this is my life 01234567801113'
+words = 'hello world this is my life 1234567891113'
 
 
 def count_words(string):
     separated_words = string.split(' ')
-    for i in range(len(separated_words)):
-        print(i, separated_words[i][0:10])
+    for i, word in enumerate(separated_words):
+        print(i, word[0:10])
 
 
 count_words(words)
