@@ -1,0 +1,59 @@
+/* 1. В подвале сайта, под разделительной чертой hr необходимо добавить список:
+a) произвольный текст 6 слов
+b) номер телефона
+c) e-mail */
+/* уже сделано */
+
+
+/* 
+2. Данное домашнее задание посвящено разбиению нашего сайта на блоки.
+3. Вам представлено изображение сайта (не макет, просто картинка 
+https://www.figma.com/proto/4DoJjp5UUQzCQkJcoGXblW/html-css-Copy?node-id=1%3A966&scaling=min-zoom), 
+на нем разными цветами выделены блоки, на которые необходимо разбить нашу страницу. 
+(Верстать по макету не нужно, просто добавить элементы div c class которые выделены на изображении)
+4.Никаких новых элементов из макета добавлять не нужно, вы с ним начнете работать начиная с 6 урока.
+5. Всем блокам необходимо задать логичное название класса, запрещается использовать перечисление 
+(block1, block2, block3. . . block378)
+6. Для страницы "Контакты" также представлено изображение страницы только без разбиения на блоки. 
+Тут вам необходимо самостоятельно разделить ваш сайт на блоки. 
+(https://www.figma.com/proto/AOKabCJEdEqr9ZZEaJ0IMS/html%2Fcss-(Copy)?node-id=1%3A811&scaling=min-zoom) */
+
+.main_menu {
+    border: 20px solid blue;
+}
+
+.main_content {
+    border: 2px solid red;  
+}
+
+.header_h1 {
+    border: 2px solid purple;  
+}
+
+.header_h3 {
+    border: 1px solid yellow;  
+}
+
+.basement {
+    border: 1px solid pink;  
+}
+
+
+.header  {
+    border: 1px solid aqua;  
+}
+
+.map {
+    border: 1px solid green;
+}
+.text_input {
+    border: 1px solid orange;
+}
+
+.contacts {
+    border: 2px solid lime;
+}
+
+.image {
+      border: 2px solid navy;
+}
