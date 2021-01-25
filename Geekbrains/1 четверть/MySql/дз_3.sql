@@ -20,7 +20,7 @@ create table users (	 						-- создание таблицы users
 -- все таблицы должны иметь primary key
 
 
-drop table if exists profiles;						-- ` (англ Ё) - на случай если имя зарезервировано
+drop table if exists profiles;						-- ` - на случай если имя зарезервировано
 create table profiles (
 	user_id serial 	primary key,	
 	gender 			enum('male','female','other','hidden') DEFAULT 'hidden',  -- (очень похоже на boolean) когда состояние только одно из четырех 
