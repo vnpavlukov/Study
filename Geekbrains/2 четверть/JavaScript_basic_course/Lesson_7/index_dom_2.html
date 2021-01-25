@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 5</title>
+</head>
+<body>
+
+<div class="div_1">
+    <h1>Тестовая страница</h1>
+
+    <div class="testclass">
+        <p>Vova Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolore fugit perferendis quas, rerum sit
+            temporibus! Cumque distinctio harum hic laboriosam laudantium, optio praesentium, quasi quis quo tenetur,
+            ullam veniam.</p>
+    </div>
+    <div class="testclass_2">
+        <p>Kate Ab adipisci alias aut commodi corporis culpa eos eveniet exercitationem facilis in libero minima
+            mollitia</p>
+        <p> numquam odit officia omnis pariatur placeat porro possimus, provident quis reiciendis sed tempore unde
+            veniam!</p>
+
+    </div>
+</div>
+
+<!--<a href="" onclick=alert('Hello')>link</a>-->
+<a href="" onclick=sayHello()>link</a>
+
+<script>
+    'use strict';
+
+    function sayHello() {
+        alert('Hello');
+    }
+
+    //первый способ сделать собыите для эл-та
+    const h1Tag = document.querySelector('h1');
+    h1Tag.onclick = function () {
+        alert('Hi World!');
+    }
+    h1Tag.onclick = null;    //удаление события
+
+
+    //второй способ сделать событие для эл-та
+    h1Tag.addEventListener('click', function () {
+
+
+    })
+
+</script>
+</body>
+</html>
